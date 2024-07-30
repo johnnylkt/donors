@@ -1,7 +1,7 @@
-<html><head><base href="https://servicenow.accounting.app/bonds-dashboard%20now,%20wipe%20everything,%20can%20you%20build%20me%20visualization%20for%20donors%20(any%20idea%20is%20good)%20for%20servicenow's%20contextual%20side%20bar?%20so%20it%20needs%20to%20be%20narrow%20and%20smaller,%20visualization%20or%20whatever%20is%20good%20to%20show%20as%20cards%20on%20the%20side%20for%20donor%20management%20for%20grants.%20This%20is%20good,%20take%20out%20the%20donation%20trends%20and%20grant%20allocation.%20For%20top%20donors%20this%20month,%20can%20you%20put%20profile%20pictures%20and%20some%20more%20details?%20also%20this%20side%20panel%20should%20be%20placed%20in%20the%20center%20of%20the%20page">
+<html><head><base href="https://servicenow.accounting.app/bonds-dashboard%20now,%20wipe%20everything,%20can%20you%20build%20me%20visualization%20for%20donors%20(any%20idea%20is%20good)%20for%20servicenow's%20contextual%20side%20bar?%20so%20it%20needs%20to%20be%20narrow%20and%20smaller,%20visualization%20or%20whatever%20is%20good%20to%20show%20as%20cards%20on%20the%20side%20for%20donor%20management%20for%20grants.%20This%20is%20good,%20take%20out%20the%20donation%20trends%20and%20grant%20allocation.%20For%20top%20donors%20this%20month,%20can%20you%20put%20profile%20pictures%20and%20some%20more%20details?%20also%20this%20side%20panel%20should%20be%20placed%20in%20the%20center%20of%20the%20page.%20Instead%20of%20Top%20donors,%20is%20it%20possible%20to%20change%20top%20programs%20donated%20this%20month,%20need%20to%20include%20amount%20and%20picture%20of%20the%20program,%20choose%20three%20programs:%20Tide%20Gates,%20MNIF%20Program,%20SPWF%20program">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ServiceNow Donor Management Panel</title>
+    <title>ServiceNow Grant Program Management Panel</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,33 +34,33 @@
             margin-bottom: 15px;
             color: #333;
         }
-        .donor-item {
+        .program-item {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-        .donor-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
+        .program-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
             margin-right: 15px;
             object-fit: cover;
         }
-        .donor-info {
+        .program-info {
             flex-grow: 1;
         }
-        .donor-name {
+        .program-name {
             font-weight: bold;
             font-size: 16px;
             margin-bottom: 3px;
         }
-        .donor-amount {
+        .program-amount {
             font-size: 14px;
             color: #4CAF50;
             font-weight: bold;
             margin-bottom: 3px;
         }
-        .donor-details {
+        .program-details {
             font-size: 12px;
             color: #666;
             line-height: 1.4;
@@ -125,46 +125,46 @@
 <body>
     <div class="panel">
         <div class="card">
-            <div class="card-title">Top Donors This Month</div>
-            <div class="donor-item">
-                <img src="https://i.pravatar.cc/150?img=1" alt="John Doe" class="donor-avatar">
-                <div class="donor-info">
-                    <div class="donor-name">John Doe</div>
-                    <div class="donor-amount">$10,000</div>
-                    <div class="donor-details">
-                        CEO, Tech Innovations Inc.<br>
-                        Donating since 2018
+            <div class="card-title">Top Programs Donated This Month</div>
+            <div class="program-item">
+                <img src="https://source.unsplash.com/300x300/?tide,gate" alt="Tide Gates" class="program-image">
+                <div class="program-info">
+                    <div class="program-name">Tide Gates</div>
+                    <div class="program-amount">$150,000</div>
+                    <div class="program-details">
+                        Coastal protection initiative<br>
+                        15 donors this month
                     </div>
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%;"></div>
+                        <div class="progress-fill" style="width: 75%;"></div>
                     </div>
                 </div>
             </div>
-            <div class="donor-item">
-                <img src="https://i.pravatar.cc/150?img=5" alt="Alice Smith" class="donor-avatar">
-                <div class="donor-info">
-                    <div class="donor-name">Alice Smith</div>
-                    <div class="donor-amount">$8,500</div>
-                    <div class="donor-details">
-                        Philanthropist<br>
-                        3 grants funded
+            <div class="program-item">
+                <img src="https://source.unsplash.com/300x300/?infrastructure" alt="MNIF Program" class="program-image">
+                <div class="program-info">
+                    <div class="program-name">MNIF Program</div>
+                    <div class="program-amount">$120,000</div>
+                    <div class="program-details">
+                        Municipal infrastructure fund<br>
+                        12 municipalities supported
                     </div>
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: 68%;"></div>
+                        <div class="progress-fill" style="width: 60%;"></div>
                     </div>
                 </div>
             </div>
-            <div class="donor-item">
-                <img src="https://i.pravatar.cc/150?img=8" alt="Robert Johnson" class="donor-avatar">
-                <div class="donor-info">
-                    <div class="donor-name">Robert Johnson</div>
-                    <div class="donor-amount">$7,200</div>
-                    <div class="donor-details">
-                        Professor, State University<br>
-                        Monthly donor
+            <div class="program-item">
+                <img src="https://source.unsplash.com/300x300/?water,treatment" alt="SPWF Program" class="program-image">
+                <div class="program-info">
+                    <div class="program-name">SPWF Program</div>
+                    <div class="program-amount">$100,000</div>
+                    <div class="program-details">
+                        Safe Public Water Fund<br>
+                        8 communities benefited
                     </div>
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: 57%;"></div>
+                        <div class="progress-fill" style="width: 50%;"></div>
                     </div>
                 </div>
             </div>
@@ -172,33 +172,33 @@
 
         <div class="card">
             <div class="card-title">Quick Actions</div>
-            <div class="quick-action">Send Thank You</div>
-            <div class="quick-action">Schedule Follow-up</div>
             <div class="quick-action">Generate Report</div>
-            <div class="quick-action">Update Donor Info</div>
+            <div class="quick-action">Allocate Funds</div>
+            <div class="quick-action">Contact Program Manager</div>
+            <div class="quick-action">Review Applications</div>
         </div>
 
         <div class="card">
             <div class="card-title">Upcoming Events</div>
             <div class="event-item">
-                <div class="event-icon">🎭</div>
+                <div class="event-icon">📊</div>
                 <div class="event-info">
-                    <div class="event-name">Annual Gala</div>
+                    <div class="event-name">Quarterly Review</div>
+                    <div class="event-date">Aug 30, 2023</div>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-icon">🏗️</div>
+                <div class="event-info">
+                    <div class="event-name">Infrastructure Summit</div>
                     <div class="event-date">Sep 15, 2023</div>
                 </div>
             </div>
             <div class="event-item">
-                <div class="event-icon">🏃</div>
+                <div class="event-icon">🌊</div>
                 <div class="event-info">
-                    <div class="event-name">Charity Run</div>
-                    <div class="event-date">Oct 2, 2023</div>
-                </div>
-            </div>
-            <div class="event-item">
-                <div class="event-icon">🎨</div>
-                <div class="event-info">
-                    <div class="event-name">Art Auction</div>
-                    <div class="event-date">Nov 12, 2023</div>
+                    <div class="event-name">Coastal Protection Forum</div>
+                    <div class="event-date">Oct 5, 2023</div>
                 </div>
             </div>
         </div>
